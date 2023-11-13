@@ -1,8 +1,8 @@
 # Hello Git World!
 
-** Welcome to the Git world\n
-* Nice to meet ya!\n
-~~ Fuck\n
+**Welcome to the Git world**
+*Nice to meet ya!*
+~~Fuck~~
 Ok?
 
 ```bash
