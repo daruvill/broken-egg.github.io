@@ -1,19 +1,20 @@
 # Git Hub Tutorial
 
-## Git 초기 설정
+### Git 초기 설정
+먼저 하드 디스크에 작업 폴더(working tree)를 생성하고, 그곳에서 git bash(cli)를 실행하자.  
+아래 명령어를 통해 현재 폴더에 git 로컬 저장소(.git)를 생성할 수 있다.
 ```bash
-$git init #현재 폴더에 git 로컬 저장소를 생성 (.git)
-#이후 현재 폴더는 작업 폴더, 즉 working tree가 된다.
+$git init
 ```
 
-### 초기 유저 설정
+#### 초기 유저 설정
 ```bash
 $git config --global user.email 'dykim3277@gmail.com'
 
 $git config --global user.name 'daruvill'
 ```
 
-### 원격 저장소 설정
+#### 원격 저장소 설정
 ```bash
 $git remote add origin https://github.com/daruvill/daruvill.github.io.git #로컬 저장소에 원격 저장소의 주소를 등록
 #origin : 원격 저장소(remote repository)의 이름. 일반적으로 origin으로 지정.
@@ -92,3 +93,5 @@ $git merge mybranch1 #현재 HEAD가 가리키는 branch가 master라는 전제 
 
 ## Git 실전 사용 사례 1
 
+
+##### 출처 : <팀 개발을 위한 Git GitHub 시작하기 / 정호영, 진유림>
