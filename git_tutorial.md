@@ -1,13 +1,14 @@
 # Git Hub Tutorial
 
-### Git 초기 설정
+## Git 초기 설정
+#### 로컬 저장소 생성
 먼저 하드 디스크에 작업 폴더(working tree)를 생성하고, 그곳에서 git bash(cli)를 실행하자.  
 ```bash
 $git init
 ```
 이후 위 명령어를 통해 현재 폴더에 git 로컬 저장소(.git)를 생성할 수 있다.
 
-##### 초기 유저 설정
+#### 초기 유저 설정
 ```bash
 $git config --global user.email 'dykim3277@gmail.com'
 
@@ -15,15 +16,18 @@ $git config --global user.name 'daruvill'
 ```
 
 #### 원격 저장소 설정
+push 명령어를 편하게 사용하기 위해서 강력 추천한다.
 ```bash
-$git remote add origin https://github.com/daruvill/daruvill.github.io.git #로컬 저장소에 원격 저장소의 주소를 등록
-#origin : 원격 저장소(remote repository)의 이름. 일반적으로 origin으로 지정.
-
-$git push -u origin master #upstream branch를 원격 저장소의 master branch로 지정. *이후 push 이하의 옵션은 생략 가능
-#upstream branch : 로컬 저장소와 연결된 원격 저장소.
-#master : commit을 올리는 branch 이름. 즉, 로컬 저장소(local repository)의 메인이 되는 branch.
-#origin/master : 원격 저장소의 메인이 되는 branch.
+$git remote add origin https://github.com/daruvill/daruvill.github.io.git 
+#origin : 원격 저장소(remote repository)의 별명. 일반적으로 origin으로 지정.
 ```
+로컬 저장소에 원격 저장소의 주소를 등록한다. 
+```bash
+$git push -u origin master #이후 push 이하의 옵션은 생략 가능
+```
+upstream branch를 원격 저장소의 master branch로 지정한다. 여기서 upstream branch란 로컬 저장소와 연결된 원격 저장소를 의미한다.  
+또한, master는 commit을 올리는 branch의 이름, 즉 로컬 저장소(local repository)의 메인이 되는 branch를 의미한다.  
+추가적으로 origin/master : 원격 저장소의 메인이 되는 branch를 의미하므로 알아두도록 하자.
 
 ## Git 자주 쓰는 명령어
 ```bash
@@ -54,7 +58,7 @@ $git log --all --oneline --graph #commit log 확인
 
 ## Git 알아두면 좋은 명령어
 
-### branch 개념
+#### branch 개념
 ```bash
 $git branch mybranch1 #branch 생성
 
@@ -84,7 +88,7 @@ $git reset README.md #stage 영역에 있는 파일을 stage에서 내림(=unsta
 $git rm README.md #reset과 마찬가지로 unstaging이지만, 폴더에 존재하는 실제 파일도 함께 삭제하므로 유의.
 ```
 
-### merge(병합) 개념
+#### merge(병합) 개념
 
 ```bash
 $git merge mybranch1 #현재 HEAD가 가리키는 branch가 master라는 전제 하에, mybranch1을 master에 병합
@@ -93,6 +97,4 @@ $git merge mybranch1 #현재 HEAD가 가리키는 branch가 master라는 전제 
 
 ## Git 실전 사용 사례 1
 
-
-##### 출처 : <팀 개발을 위한 Git GitHub 시작하기 / 정호영, 진유림>
-출처 : <팀 개발을 위한 Git GitHub 시작하기 / 정호영, 진유림>
+**출처 : <팀 개발을 위한 Git GitHub 시작하기 / 정호영, 진유림>**
