@@ -2,12 +2,12 @@
 
 ### Git 초기 설정
 먼저 하드 디스크에 작업 폴더(working tree)를 생성하고, 그곳에서 git bash(cli)를 실행하자.  
-아래 명령어를 통해 현재 폴더에 git 로컬 저장소(.git)를 생성할 수 있다.
 ```bash
 $git init
 ```
+이후 위 명령어를 통해 현재 폴더에 git 로컬 저장소(.git)를 생성할 수 있다.
 
-#### 초기 유저 설정
+##### 초기 유저 설정
 ```bash
 $git config --global user.email 'dykim3277@gmail.com'
 
@@ -95,3 +95,4 @@ $git merge mybranch1 #현재 HEAD가 가리키는 branch가 master라는 전제 
 
 
 ##### 출처 : <팀 개발을 위한 Git GitHub 시작하기 / 정호영, 진유림>
+출처 : <팀 개발을 위한 Git GitHub 시작하기 / 정호영, 진유림>
