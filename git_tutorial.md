@@ -1,64 +1,73 @@
 # Git Hub Tutorial
 
 ## Git 초기 설정
-#### 로컬 저장소 생성
+#### 1/ 로컬 저장소 생성
 먼저 하드 디스크에 작업 폴더(working tree)를 생성하고, 그곳에서 git bash(cli)를 실행하자.  
 ```bash
 $git init
 ```
 이후 위 명령어를 통해 현재 폴더에 git 로컬 저장소(.git)를 생성할 수 있다.
 
-#### 초기 유저 설정
+#### 2/ 초기 유저 설정
 ```bash
 $git config --global user.email 'dykim3277@gmail.com'
 
 $git config --global user.name 'daruvill'
 ```
 
-#### 원격 저장소 설정
-push 명령어를 편하게 사용하기 위해서 강력 추천한다.
+#### 3/ 원격 저장소 설정
 ```bash
 $git remote add origin https://github.com/daruvill/daruvill.github.io.git 
-#origin : 원격 저장소(remote repository)의 별명. 일반적으로 origin으로 지정.
+#origin : 원격 저장소(remote repository)의 이름
 ```
-로컬 저장소에 원격 저장소의 주소를 등록한다. 
+로컬 저장소에 원격 저장소의 주소를 등록한다.
 ```bash
 $git push -u origin master #이후 push 이하의 옵션은 생략 가능
+#upstream branch : 로컬 저장소와 연결된 원격 저장소  
+#master : commit을 올리는 branch의 이름, 즉 로컬 저장소(local repository)의 메인이 되는 branch.  
+#origin/master :  원격 저장소의 메인이 되는 branch.
 ```
-upstream branch를 원격 저장소의 master branch로 지정한다. 여기서 upstream branch란 로컬 저장소와 연결된 원격 저장소를 의미한다.  
-또한, master는 commit을 올리는 branch의 이름, 즉 로컬 저장소(local repository)의 메인이 되는 branch를 의미한다.  
-추가적으로 origin/master : 원격 저장소의 메인이 되는 branch를 의미하므로 알아두도록 하자.
+upstream branch를 원격 저장소의 master branch로 지정한다.
 
 ## Git 자주 쓰는 명령어
+#### 1/ status
 ```bash
-$git status #git 폴더에 변동 사항이 있는지 확인. 즉, working tree 상태 확인
+$git status
 ```
+git 폴더에 변동 사항이 있는지 확인한다. 즉, 작업 폴더의 상태를 확인.
 
+#### 2/ add
 ```bash
-$git add README.md #README.md 파일을 stage에 추가 (=staging)
+$git add README.md 
 #README.md : 저장소에 대한 설명, 설치 방법, 기여한 사람 등을 작성.
-#파일이 새로 생성된 경우 뿐만 아니라, 파일 내용이 수정된 경우에도 staging을 다시 해주어야 한다.
 ```
+특정 파일을 stage에 추가한다.(=staging) 파일이 새로 생성된 경우 뿐만 아니라, 파일 내용이 수정된 경우에도 staging을 다시 해주어야 한다.  
 
+#### 3/ commit 
 ```bash
-$git commit -m 'upload README.md' #stage에 대해서 commit(세이브 포인트) 작성
+$git commit -m 'upload README.md'
 #-m : 세이브 포인트 메모
 ```
+현재 stage에 대해서 commit(세이브 포인트)을 작성한다.
 
+#### 4/ push
 ```bash
-$git push #커밋을 원격 저장소에 업로드
+$git push #위의 업스트림 설정으로 인해서 간단하게 사용 가능
 ```
+커밋을 원격 저장소에 업로드한다.
 
+#### 5/ log
 ```bash
-$git log --all --oneline --graph #commit log 확인
+$git log --all --oneline --graph
 #--all : 모든 log 출력 (-n2와 같이 몇 라인만 출력 가능)
 #--oneline : 한 줄로 요약하여 출력
 #--graph : graph 형태로 표시하여 출력
 ```
+commit의 log를 확인한다.
 
 ## Git 알아두면 좋은 명령어
 
-#### branch 개념
+#### 1/ branch 개념
 ```bash
 $git branch mybranch1 #branch 생성
 
@@ -88,7 +97,7 @@ $git reset README.md #stage 영역에 있는 파일을 stage에서 내림(=unsta
 $git rm README.md #reset과 마찬가지로 unstaging이지만, 폴더에 존재하는 실제 파일도 함께 삭제하므로 유의.
 ```
 
-#### merge(병합) 개념
+#### 2/ merge(병합) 개념
 
 ```bash
 $git merge mybranch1 #현재 HEAD가 가리키는 branch가 master라는 전제 하에, mybranch1을 master에 병합
