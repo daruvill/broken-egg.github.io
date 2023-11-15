@@ -20,7 +20,7 @@ title                    : "Welcome to the Broken Egg"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "daruvill"
-description              : "made by crazy man"
+description              : "awesome blogs"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,9 +106,9 @@ analytics:
 author:
   name             : "daruvill"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "뭘 쳐다보냐"
+  location         : "South Korea"
+  email            : "dykim3277@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
