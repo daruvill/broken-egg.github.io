@@ -1,5 +1,14 @@
 # Git Hub Tutorial
 
+## Contents (Table Of Content, TOC)
+
+1. [Git 초기 설정](#git-초기-설정)
+2. [Git 자주 쓰는 명령어](#git-자주-쓰는-명령어)
+3. [Git 알아두면 좋은 명령어](#git-알아두면-좋은-명령어)
+4. [기타 참고 사항](#기타-참고-사항)
+
+---
+
 ## Git 초기 설정
 #### 1/ 로컬 저장소 생성
 먼저 하드 디스크에 작업 폴더(working tree)를 생성하고, 그곳에서 git bash(cli)를 실행하자.  
@@ -30,6 +39,8 @@ $git push -u origin master #이후 push 이하의 옵션은 생략 가능
 #origin/master :  원격 저장소의 메인이 되는 branch.
 ```
 이후 upstream branch를 원격 저장소의 master branch로 지정한다. (이해가 가지 않아도 그냥 따라하면 된다)
+
+---
 
 ## Git 자주 쓰는 명령어
 #### 1/ status
@@ -75,6 +86,8 @@ $git log --all --oneline --graph
 #--decorate : ?
 ```
 commit의 log를 확인한다.
+
+---
 
 ## Git 알아두면 좋은 명령어
 
