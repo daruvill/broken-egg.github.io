@@ -1,16 +1,16 @@
 # main links
 main:
-  - title : "Git"
+  - title: "Git"
   url : /git_study/
-  - title : "Deep Learning"
-  #url : /dl/
-  - title : "Programming Language"
-  #url : /pl/
-  - title : "Mathematics"
-  #url : /math/
-  - title : "SQL"
-  #url : /sql/
-  - title : "Coding Test"
-  #url : /ct/
-  - title : "Web"
-  #url : /web/
+  - title: "Deep Learning"
+  url : /dl/
+  - title: "Programming Language"
+  url : /pl/
+  - title: "Mathematics"
+  url : /math/
+  - title: "SQL"
+  url : /sql/
+  - title: "Coding Test"
+  url : /ct/
+  - title: "Web"
+  url : /web/
