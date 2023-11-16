@@ -5,7 +5,6 @@ permalink: /categories/git_study/
 categories: ['Git study']
 tags: ['Git', 'GitHub','tutorial']
 toc: true
-toc_sticky: true
 ---
 
 ## Contents
@@ -51,11 +50,9 @@ $git remote add origin https://github.com/daruvill/daruvill.github.io.git
 
 ```bash
 $git push -u origin master #이후 push 이하의 옵션은 생략 가능
-'''
-upstream branch : 로컬 저장소와 연결된 원격 저장소  
-master : 로컬 저장소의 메인이 되는 branch.  
-origin/master :  원격 저장소의 메인이 되는 branch.
-'''
+#upstream branch : 로컬 저장소와 연결된 원격 저장소  
+#master : 로컬 저장소의 메인이 되는 branch.  
+#origin/master :  원격 저장소의 메인이 되는 branch.
 ```
 
 ---
@@ -98,11 +95,9 @@ cf. force `push`의 경우 혼자 사용하고 있는 branch에만 하고, 일�
 #### [5] log
 ```bash
 $git log --all --oneline --graph
-'''
---all : 모든 log 출력 (-n2와 같이 몇 라인만 출력도 가능)
---oneline : 한 줄로 요약하여 출력
---graph : graph 형태로 표시하여 출력
-'''
+#--all : 모든 log 출력 (-n2와 같이 몇 라인만 출력도 가능)
+#--oneline : 한 줄로 요약하여 출력
+#--graph : graph 형태로 표시하여 출력
 ```
 commit의 **로그를 확인**.
 
