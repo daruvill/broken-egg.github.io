@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://daruvill.github.io/sitemap.xml

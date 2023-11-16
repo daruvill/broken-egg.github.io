@@ -1,3 +1,13 @@
+---
+layout: single
+title: "Git Hub Tutorial"
+#post-order : 1
+date: "2023-11-16 19:20:00 +0900"
+last_modified_at: "2023-11-16 19:20:00 +0900"
+categories: "Git study"
+tags: ['Git', 'GitHub','tutorial']
+---
+
 # Git Hub Tutorial
 
 ## Contents
@@ -60,7 +70,7 @@ origin/master :  원격 저장소의 메인이 되는 branch.
 $git status
 ```
 **작업 폴더의 상태**를 확인하는데, 구체적으로 **작업 폴더, stage, HEAD 커밋**의 3가지 저장 공간의 **차이**를 비교해서 보여준다.   
-commit 이후 status 명령 결과로서 출력되는 'working tree clean'은 위에서 언급한 3가지 저장 공간의 내용이 모두 동일함을 의미.
+`commit` 이후 `status` 결과로서 출력되는 'working tree clean'은 위에서 언급한 3가지 저장 공간의 내용이 모두 동일함을 의미.
 
 #### [2] add
 ```bash
@@ -85,7 +95,7 @@ $git push #위의 업스트림 설정으로 인해서 간단하게 사용 가능
 ```
 로컬 저장소에 존재하는 커밋을 **원격 저장소에 업로드**. 즉, 현재 branch에서 새로 생성한 커밋을 원격 저장소에 업로드.  
 
-cf. force push의 경우 혼자 사용하고 있는 branch에만 하고, 일반적으로 **사용을 추천하지 않는다**.
+cf. force `push`의 경우 혼자 사용하고 있는 branch에만 하고, 일반적으로 **사용을 추천하지 않는다**.
 
 #### [5] log
 ```bash
@@ -105,10 +115,10 @@ commit의 **로그를 확인**.
 #### [0] 파일 기본 개념
 
 파일을 처음 생성할 시 **untracked(추적 안 됨)** 상태로 존재한다. (**작업 폴더에만 파일이 존재**)  
-이후 add 실행 시 **staged(스테이지 됨)** 상태로 변한다. (**작업 폴더와 stage에 파일이 존재**)  
-끝으로 commit 실행 시 **unmodified(수정 없음)** 상태로 변한다. (**작업 폴더, stage, HEAD 커밋 모두에 파일 존재**)  
-파일의 내용이 수정된다면 **modified(수정 됨)** 상태로 변하며, add를 실행해 스테이지에 다시 올려주어야 한다.  
-반면 unmodified 상태의 파일은 **그대로 stage에 남아 있기** 때문에, commit 실행 시 함께 기록된다.
+이후 `add`시 **staged(스테이지 됨)** 상태로 변한다. (**작업 폴더와 stage에 파일이 존재**)  
+끝으로 `commit`시 **unmodified(수정 없음)** 상태로 변한다. (**작업 폴더, stage, HEAD 커밋 모두에 파일 존재**)  
+파일의 내용이 수정된다면 **modified(수정 됨)** 상태로 변하며, `add`를 통해 스테이지에 다시 올려주어야 한다.  
+반면 unmodified 상태의 파일은 **그대로 stage에 남아 있기** 때문에, `commit`시 함께 기록된다.
 
 #### [1] branch(가지)
 
@@ -147,7 +157,7 @@ $git branch -v
 ```bash
 $git checkout mybranch1
 ```
-**특정한 branch로 이동**한다. log를 통해 HEAD 포인터가 변경된 것을 확인 가능.    
+**특정한 branch로 이동**한다. `log`를 통해 HEAD 포인터가 변경된 것을 확인 가능.    
 구체적으로 해당 branch로 HEAD 포인터를 이동시키고, stage와 작업 폴더를 HEAD가 가리키는 커밋과 동일한 내용으로 변경하는 원리.
 
 ```bash
@@ -181,7 +191,7 @@ $git merge mybranch1 #현재 HEAD가 가리키는 branch에 mybranch1를 병합 
 $git pull origin master
 ```
 원격 저장소에 새로운 커밋이 존재한다면 이를 로컬 저장소에 내려 받는다. 즉, **원격 저장소의 변경 사항을 작업 폴더에 반영**.  
-pull = fetch + merge.
+`pull` = `fetch` + `merge`.
 
 #### [5] reset
 
@@ -199,7 +209,7 @@ $git reset --hard HEAD~2
 $git revert 5813bb5
 ```
 특정 커밋을 **취소**. **작업 폴더의 내용이 변경되지 않고(?)**, 취소를 한 커밋의 **이력이 남는다**.  
-**최신 커밋부터** 취소를 하는 것이 좋고, 협업하는 과정이라면 reset보다는 **revert의 사용을 추천**.  
+**최신 커밋부터** 취소를 하는 것이 좋고, 협업하는 과정이라면 `reset`보다는 **`revert`의 사용을 추천**.  
 Q. reset --mixed와 revert의 차이는? 테스트 필요.
 
 #### [7] fetch
@@ -207,7 +217,7 @@ Q. reset --mixed와 revert의 차이는? 테스트 필요.
 ```bash
 $git fetch
 ```
-원격 저장소의 branch와 커밋을 로컬 저장소와 **동기화**한다. pull에서 merge를 제외한 것과 동일.
+원격 저장소의 branch와 커밋을 로컬 저장소와 **동기화**한다. `pull`에서 `merge`를 제외한 것과 동일.
 
 #### [8] 기타 : 기타 참고 사항과 합칠 필요 있음
 
@@ -224,8 +234,8 @@ $git clone https://github.com/daruvill/daruvill.github.io.git mynewfolder1
 ```bash
 $git reset README.md
 ```
-stage 영역에 있는 파일을 **stage에서 내린다**. (=**unstaging**, add의 반대 기능)  
-따라서 파일은 add 명령을 실행하기 이전인 **untracked(추적 안 됨)**의 상태로 돌아간다.  
+stage 영역에 있는 파일을 **stage에서 내린다**. (=**unstaging**, `add`의 반대 기능)  
+따라서 파일은 `add`를 실행하기 이전인 **untracked(추적 안 됨)**의 상태로 돌아간다.  
 위의 reset과 혼동 주의(?)
 
 ```bash
@@ -329,13 +339,13 @@ $git rebase mybranch1
 ```
 현재 branch에 있는 새로운 커밋을 **특정 branch 위로 재배치**. **빨리감기 병합이 가능한 경우 이를 실행**함.  
 HEAD 포인터와 특정 branch의 공통 조상을 찾고, 공통 조상 이후에 생성한 커밋들을 특정 branch 뒤로 재배치하는 원리.  
-3-way merge와는 달리 rebase를 이용하면 history graph는 깔끔해지지만 **conflict가 여러 번 발생**할 수 있으므로 주의.  
-**원격 저장소에 push한 branch는 rebase하지 않는 것이 원칙**. 따라서 rebase는 **로컬 저장소의 branch에만 적용**하는 것을 권장.  
+3-way merge와는 달리 `rebase`를 이용하면 history graph는 깔끔해지지만 **conflict가 여러 번 발생**할 수 있으므로 주의.  
+**원격 저장소에 push한 branch는 rebase하지 않는 것이 원칙**. 따라서 `rebase`는 **로컬 저장소의 branch에만 적용**하는 것을 권장.  
 그렇지 않으면 사본 커밋들이 무수히 생겨나고 history가 꼬일 수 있음.
 
 #### [16] 여러 대의 pc에서 작업을 할 경우 유의 사항
-여러 PC에서 한 branch에 작업을 하는 경우, 한 PC에서는 커밋을 생성하고 push를 했는데, 다른 PC에서는 pull을 하지 않고 커밋하면 문제 발생.  
-이후 pull을 시도하면 자동으로 3-way 병합이 발생하므로 그래프가 복잡해짐. 이때는 reset으로 병합 커밋을 되돌리고, rebase를 사용해야 함.
+여러 PC에서 한 branch에 작업을 하는 경우, 한 PC에서는 커밋을 생성하고 `push`를 했는데, 다른 PC에서는 `pull`을 하지 않고 커밋하면 문제 발생.  
+이후 `pull`을 시도하면 자동으로 3-way 병합이 발생하므로 그래프가 복잡해짐. 이때는 `reset`으로 병합 커밋을 되돌리고, `rebase`를 사용해야 함.
 
 ---
 
