@@ -105,10 +105,10 @@ analytics:
 # Site Author
 author:
   name             : "daruvill"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "뭘 쳐다보냐"
+  avatar           : "/assets/images/ㅇㄱㄱㄷ.jpg"
+  bio              : "생각보다 도움이 될지도 모릅니다."
   location         : "South Korea"
-  email            : "dykim3277@gmail.com"
+  email            : #
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -291,5 +291,6 @@ defaults:
       share: true
       related: true
       toc : true
+      toc_sticky: true #add
       sidebar:
         nav : main-sidebar
