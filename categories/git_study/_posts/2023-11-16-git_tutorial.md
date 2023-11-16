@@ -4,6 +4,8 @@ layout: category
 permalink: /categories/git_study/
 categories: ['Git study']
 tags: ['Git', 'GitHub','tutorial']
+toc: true
+toc_sticky: true
 ---
 
 ## Contents
