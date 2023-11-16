@@ -1,9 +1,7 @@
 ---
-layout: single
 title: "Git Hub Tutorial"
-#post-order : 1
-date: "2023-11-16 19:20:00 +0900"
-last_modified_at: "2023-11-16 19:20:00 +0900"
+layout: category
+permalink: /categories/git_study/
 categories: ['Git study']
 tags: ['Git', 'GitHub','tutorial']
 ---

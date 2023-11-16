@@ -108,11 +108,11 @@ author:
   avatar           : "/assets/images/girl.jpg"
   bio              : "생각보다 도움이 될지도 모릅니다."
   location         : "South Korea"
-  #email            : "dykim3277@gmail.com"
+  email            : "dykim3277@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "dykim3277@gmail.com"
+      #url: "dykim3277@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
