@@ -1,11 +1,9 @@
 ---
 title: "Git Hub Tutorial"
-layout: category
-permalink: /categories/git_study/_posts/
+layout: single
 categories: ['Git study']
 tags: ['Git', 'GitHub','tutorial']
 comments: true
-toc: true
 ---
 
 ## Contents
