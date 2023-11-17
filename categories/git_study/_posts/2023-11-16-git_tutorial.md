@@ -358,8 +358,8 @@ HEAD 포인터와 특정 branch의 공통 조상을 찾고, 공통 조상 이후
     };
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
-    //s.src = 'https://daruvill.disqus.com/embed.js';
-    s.src = 'https://{{ site.comments.disqus.shortname }}.disqus.com/embed.js';
+    s.src = 'https://daruvill.disqus.com/embed.js';
+    //s.src = 'https://{{ site.comments.disqus.shortname }}.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
