@@ -1,7 +1,7 @@
 ---
 title: "Git Hub Tutorial"
 layout: category
-permalink: /categories/git_study/
+permalink: /categories/git_study/2023-11-16-git_tutorial.md
 categories: ['Git study']
 tags: ['Git', 'GitHub','tutorial']
 comments: true
