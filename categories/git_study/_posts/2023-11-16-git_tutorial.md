@@ -6,6 +6,7 @@ tags: ['Git', 'GitHub','tutorial']
 comments: true
 ---
 
+<!--
 ## Contents
 
 1. [Git 초기 설정](#git-초기-설정)
@@ -14,6 +15,7 @@ comments: true
 4. [기타 참고 사항](#기타-참고-사항--팁은-따로-구분하는-것이-좋지-않을까)
 
 ---
+-->
 
 ## Git 초기 설정
 
@@ -344,7 +346,7 @@ HEAD 포인터와 특정 branch의 공통 조상을 찾고, 공통 조상 이후
 ## 출처
 
 **<< 팀 개발을 위한 Git GitHub 시작하기 / 정호영, 진유림 >>**  
-**https://velog.io/@njs04210/Git-reset%EA%B3%BC-revert-%EC%95%8C%EA%B3%A0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0**  
+**[reset과 revert 알고 사용하기](https://velog.io/@njs04210/Git-reset%EA%B3%BC-revert-%EC%95%8C%EA%B3%A0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)**
 
 {% if page.comments %}
 <div id="disqus_thread"></div>
