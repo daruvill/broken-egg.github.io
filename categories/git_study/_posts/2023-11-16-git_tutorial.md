@@ -8,7 +8,7 @@ comments: true
 
 ## Git 초기 설정
 
-#### [1] 로컬 저장소 생성
+### [1] 로컬 저장소 생성
 
 먼저 하드 디스크에 **작업 폴더(working tree)**를 생성하고, 그곳에서 git bash(cli)를 실행하자.  
 이후 아래 명령어를 통해 현재 폴더에 git **로컬 저장소(local repository, .git)**를 생성할 수 있다.
@@ -17,7 +17,7 @@ comments: true
 $git init
 ```
 
-#### [2] 유저 설정
+### [2] 유저 설정
 
 ```bash
 $git config --global user.email 'dykim3277@gmail.com'
@@ -27,7 +27,7 @@ $git config --global user.name 'daruvill'
 $git config --global core.editor #vscode가 아니라면 git을 재설치 해주는 것이 좋다.
 ```
 
-#### [3] 원격 저장소 설정
+### [3] 원격 저장소 설정
 
 로컬 저장소에 **원격 저장소(remote repository)**의 주소를 등록한다.
 
@@ -49,7 +49,7 @@ $git push -u origin master #이후 push 이하의 옵션은 생략 가능
 
 ## Git 자주 쓰는 명령어
 
-#### [1] status
+### [1] status
 
 ```bash
 $git status
@@ -57,14 +57,14 @@ $git status
 **작업 폴더의 상태**를 확인하는데, 구체적으로 **작업 폴더, stage, HEAD 커밋**의 3가지 저장 공간의 **차이**를 비교해서 보여준다.   
 `commit` 이후 `status` 결과로서 출력되는 'working tree clean'은 위에서 언급한 3가지 저장 공간의 내용이 모두 동일함을 의미.
 
-#### [2] add
+### [2] add
 ```bash
 $git add README.md 
 ```
 특정 파일을 **stage에 추가**한다.(=staging)  
 파일이 새로 생성된 경우 뿐만 아니라, 파일 내용이 **수정된(modified)** 경우에도 해주어야 한다.
 
-#### [3] commit 
+### [3] commit 
 ```bash
 $git commit -m 'upload README.md'
 #-m : 세이브 포인트 메모
@@ -74,7 +74,7 @@ commit은 일반적으로 40자리 SHA1 해시 체크섬 값을 가지므로, �
 실행 결과로서 commit 객체가 생기는데, 부모 commit에 대한 참조와 실제 commit을 구성하는 파일 객체가 들어 있다.  
 구체적으로 stage의 객체로 tree 객체가 만들어지는데, commit을 구성하는 파일 객체에는 commit 메시지와 tree 객체가 포함.
 
-#### [4] push
+### [4] push
 ```bash
 $git push #위의 업스트림 설정으로 인해서 간단하게 사용 가능
 ```
@@ -82,7 +82,7 @@ $git push #위의 업스트림 설정으로 인해서 간단하게 사용 가능
 
 cf. force `push`의 경우 혼자 사용하고 있는 branch에만 하고, 일반적으로 **사용을 추천하지 않는다**.
 
-#### [5] log
+### [5] log
 ```bash
 $git log --all --oneline --graph
 #--all : 모든 log 출력 (-n2와 같이 몇 라인만 출력도 가능)
@@ -95,7 +95,7 @@ commit의 **로그를 확인**.
 
 ## Git 알아두면 좋은 명령어
 
-#### [0] 파일 기본 개념
+### [0] 파일 기본 개념
 
 파일을 처음 생성할 시 **untracked(추적 안 됨)** 상태로 존재한다. (**작업 폴더에만 파일이 존재**)  
 이후 `add`시 **staged(스테이지 됨)** 상태로 변한다. (**작업 폴더와 stage에 파일이 존재**)  
@@ -103,7 +103,7 @@ commit의 **로그를 확인**.
 파일의 내용이 수정된다면 **modified(수정 됨)** 상태로 변하며, `add`를 통해 스테이지에 다시 올려주어야 한다.  
 반면 unmodified 상태의 파일은 **그대로 stage에 남아 있기** 때문에, `commit`시 함께 기록된다.
 
-#### [1] branch(가지)
+### [1] branch(가지)
 
 특정 커밋에서 **가지를 나누어 작업**할 수 있는 기능. 새로운 가지에 커밋을 만들려면 반드시 branch를 먼저 만들어야 한다.  
 새로운 커밋을 추가하면 master branch는 새로운 커밋을 가리키게 된다. 즉, branch는 **특정한 커밋 객체를 가리키는 일종의 포인터**이다.  
@@ -135,7 +135,7 @@ $git branch -v
 ```
 로컬 저장소의 **branch 목록을 출력**한다.
 
-#### [2] checkout
+### [2] checkout
 
 ```bash
 $git checkout mybranch1
@@ -159,7 +159,7 @@ $git checkout -b mybranch1 master
 ```
 특정 branch(master)에서 새로운 branch(mybranch1)를 생성하고 생성된 branch로 이동.  
 
-#### [3] merge(병합)
+### [3] merge(병합)
 
 ```bash
 $git merge mybranch1 #현재 HEAD가 가리키는 branch에 mybranch1를 병합 (일종의 내용 갱신)
@@ -168,7 +168,7 @@ $git merge mybranch1 #현재 HEAD가 가리키는 branch에 mybranch1를 병합 
 새로운 상태의 커밋이라면 **병합 커밋**이 생성된다. 병합한 결과물이 어느 한 쪽과 동일하다면 **fast-forward(빨리 감기) 병합**.  
 그 밖에는 **충돌 상태(conflict)**도 존재.
 
-#### [4] pull
+### [4] pull
 
 ```bash
 $git pull origin master
@@ -176,7 +176,7 @@ $git pull origin master
 원격 저장소에 새로운 커밋이 존재한다면 이를 로컬 저장소에 내려 받는다. 즉, **원격 저장소의 변경 사항을 작업 폴더에 반영**.  
 `pull` = `fetch` + `merge`.
 
-#### [5] reset
+### [5] reset
 
 ```bash
 $git reset --hard HEAD~2
@@ -186,7 +186,7 @@ $git reset --hard HEAD~2
 ```
 현재 branch를 지정한 커밋으로 옮기고, 작업 폴더의 내용도 함께 변경된다. 즉, **현재 branch를 특정 커밋까지 초기화 때 사용**.
 
-#### [6] revert
+### [6] revert
 
 ```bash
 $git revert 5813bb5
@@ -195,14 +195,14 @@ $git revert 5813bb5
 **최신 커밋부터** 취소를 하는 것이 좋고, 협업하는 과정이라면 `reset`보다는 **`revert`의 사용을 추천**.  
 Q. reset --mixed와 revert의 차이는? 테스트 필요.
 
-#### [7] fetch
+### [7] fetch
 
 ```bash
 $git fetch
 ```
 원격 저장소의 branch와 커밋을 로컬 저장소와 **동기화**한다. `pull`에서 `merge`를 제외한 것과 동일.
 
-#### [8] 기타 : 기타 참고 사항과 합칠 필요 있음
+### [8] 기타 : 기타 참고 사항과 합칠 필요 있음
 
 ```bash
 $git remote -v
@@ -230,7 +230,7 @@ $git rm README.md
 
 ## 기타 참고 사항 : 팁은 따로 구분하는 것이 좋지 않을까?
 
-#### [1] branch 폴더
+### [1] branch 폴더
 ```bash
 $ls .git/refs/heads/ 
 ```
@@ -238,7 +238,7 @@ $ls .git/refs/heads/
 해당 폴더의 branch 이름에 해당하는 파일을 제거하면 해당 branch가 제거된다.  
 즉, *git branch -d mybranch1 == rm .git/refs/heads/mybranch1*
 
-#### [2] HEAD 포인터
+### [2] HEAD 포인터
 ```bash
 $cat .git/HEAD
 ```
@@ -246,7 +246,7 @@ $cat .git/HEAD
 HEAD 포인터는 현재 작업중인 branch를 의미하며, branch는 커밋을 가리키므로 HEAD 포인터 역시 커밋을 가리킨다.  
 즉, HEAD 포인터는 **현재 작업 중인 branch의 최근 커밋**을 가리킨다.
 
-#### [3] Git 객체
+### [3] Git 객체
 ```bash
 $ls -a .git/objects/ #Git 객체들이 위치한 폴더
 
@@ -259,7 +259,7 @@ $git show ff5bda #파일의 체크섬 값을 통해서 해당 Git 객체의 내�
 blob은 제목이나 생성 날짜와는 관계 없이 **내용이 같을 경우 같은 해시 체크섬**을 가진다.  
 따라서 같은 내용의 파일은 하나의 blob으로서 관리된다.
 
-#### [4] Stage
+### [4] Stage
 ```bash
 $git hash-object README.md #특정 파일의 체크섬 값을 확인
 
@@ -270,13 +270,13 @@ $ls -a .git/index #index 파일 = Git Stage
 $git ls-files --stage #stage 파일의 내용 확인
 ```
 
-#### [5] 임시 branch 생성
+### [5] 임시 branch 생성
 ```bash
 $git branch mytestbranch1 mybranch1 #특정 branch(mybranch1)에서 임시 branch(mytestbranch1) 생성
 ```
 임시 branch를 생성하여 코드를 **테스트** 한 후 이를 제거하면 아무런 문제가 없다.
 
-#### [6] tag 부착
+### [6] tag 부착
 ```bash
 $git tag -a -m 'first tag' v0.1
 #tag -a -m <message> <tag name> <branch or checksum>
@@ -287,36 +287,36 @@ $git push origin v0.1 #원격 저장소에 tag 업로드
 특정 커밋에 **포스트잇**을 붙이는 느낌으로 이해하면 된다. branch와 마찬가지로 일종의 **포인터**.  
 사용자들이 크게 느낄 변화를 적용했을 때는 메이저 버전을 올리고, 작은 변화가 생겼을 때는 마이너 버전을 올린다.  
 
-#### [7] pull request
+### [7] pull request
 협업자에게 **branch 병합을 요청하는 메시지**를 보내는 것. (**GitHub 한정**)
 
-#### [8] fork
+### [8] fork
 다른 유저의 **원본 저장소**를 내 계정의 원격 저장소로 **복사**하는 기능. (**GitHub 한정**)  
 5명 이내의 적은 개발자가 협업을 한다면 모두 협업자로 등록하는 것이 좋지만, 50명 이상이 작업을 한다면 fork가 필요.
 
-#### [9] README.md
+### [9] README.md
 저장소에 대한 **설명, 설치 방법, 기여한 사람** 등을 작성하는 파일. contribution guideline이 적혀있는 경우도 있으니 확인 필요.  
 MIT License의 경우, 해당 소스를 재가공해서 재배포해도 된다는 것을 의미.
 
-#### [10] branch 명명 규칙
+### [10] branch 명명 규칙
 (1) feat : 각 개발자가 개발 중인 branch. 직접 커밋을 올림.  
 (2) master : feat branch에서 개발 완료된 코드가 합쳐진 branch. 베타 버전. **병합을 통해서만 코드를 업데이트**. **직접 커밋을 올리지 않음**.  
 (3) latest : **실제 출시**할 코드를 올리는 branch. master branch에서 굵직한 개발이 끝나면 출시 시점에 latest branch로 코드를 병합.  
 (4) hotFix, bugFix : **버그 수정**을 목적으로 만들어진 branch.
 
-#### [11] cherry-pick(선별하다) : 코드 필요
+### [11] cherry-pick(선별하다) : 코드 필요
 내가 따길 원하는 특정 커밋을 선택하여 이를 반영. 즉, **다른 branch의 커밋 하나를 골라서 현재 branch에 반영**할 수 있음.
 
-#### [12] stash (넣어두다) : 코드 필요
+### [12] stash (넣어두다) : 코드 필요
 커밋으로 만들기는 애매하지만, **변경 사항**을 잠깐 서랍 속에 넣어뒀다가 다시 꺼내쓰고 싶을 때 사용. tracked 상태인 파일만 들어갈 수 있음.  
 
-#### [13] bash 짤막 Tip
+### [13] bash 짤막 Tip
 bash 창에서 붙여넣기는 Ctrl+v가 아닌 **Shift + insert**.
 
-#### [14] commit message
+### [14] commit message
 좋은 커밋 메시지란 제목과 본문을 빈 줄로 구분. 제목은 50자 이내, 본문은 72자 단위로 줄 바꿈. what과 why를 위주로 설명.
 
-#### [15] rebase
+### [15] rebase
 ```bash
 $git rebase mybranch1
 ```
@@ -326,7 +326,7 @@ HEAD 포인터와 특정 branch의 공통 조상을 찾고, 공통 조상 이후
 **원격 저장소에 push한 branch는 rebase하지 않는 것이 원칙**. 따라서 `rebase`는 **로컬 저장소의 branch에만 적용**하는 것을 권장.  
 그렇지 않으면 사본 커밋들이 무수히 생겨나고 history가 꼬일 수 있음.
 
-#### [16] 여러 대의 pc에서 작업을 할 경우 유의 사항
+### [16] 여러 대의 pc에서 작업을 할 경우 유의 사항
 여러 PC에서 한 branch에 작업을 하는 경우, 한 PC에서는 커밋을 생성하고 `push`를 했는데, 다른 PC에서는 `pull`을 하지 않고 커밋하면 문제 발생.  
 이후 `pull`을 시도하면 자동으로 3-way 병합이 발생하므로 그래프가 복잡해짐. 이때는 `reset`으로 병합 커밋을 되돌리고, `rebase`를 사용해야 함.
 
