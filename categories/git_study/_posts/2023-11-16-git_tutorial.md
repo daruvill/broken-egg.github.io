@@ -337,4 +337,4 @@ HEAD 포인터와 특정 branch의 공통 조상을 찾고, 공통 조상 이후
 **<< 팀 개발을 위한 Git GitHub 시작하기 / 정호영, 진유림 >>**  
 **[reset과 revert 알고 사용하기](https://velog.io/@njs04210/Git-reset%EA%B3%BC-revert-%EC%95%8C%EA%B3%A0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)**
 
-{% include_relative _includes/disqus_include.md %}
+{% include_relative disqus_include.md %}
