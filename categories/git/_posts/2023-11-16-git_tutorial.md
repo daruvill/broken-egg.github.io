@@ -1,7 +1,6 @@
 ---
 title: "Git Hub Tutorial"
 layout: single
-categories: ['git']
 tags: ['Git', 'GitHub','tutorial']
 comments: true
 ---
