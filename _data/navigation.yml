@@ -1,16 +1,26 @@
 # main links
 main:
   - title: "Git study"
-    url: /categories/git_study/
-  #- title: "Deep Learning"
-  #  url: /dl/
-  #- title: "Programming Language"
-  #  url: /pl/
-  #- title: "Mathematics"
-  #  url: /math/
-  #- title: "SQL"
-  #  url: /sql/
-  #- title: "Coding Test"
-  #  url: /ct/
-  #- title: "Web"
-  #  url: /web/
+    url: /categories/git/
+  - title: "Deep Learning"
+    url: /categories/dl/
+  - title: "Programming Language"
+    url: /categories/pl/
+  - title: "Math"
+    url: /categories/math/
+  - title: "DataBase"
+    url: /categories/sql/
+  - title: "Coding Test"
+    url: /categories/ct/
+  - title: "Web"
+    url: /categories/web/
+  - title: "Algorithms"
+    url: /categories/ag/
+  - title: "Papers and Articles"
+    url: /categories/papers/
+  - title: "Personal Projects"
+    url: /categories/projects/
+  - title: "Server"
+    url: /categories/server/
+  - title: "Data Structure"
+    url: /categories/ds/
