@@ -1,6 +1,6 @@
 ---
 title: "Git Hub Tutorial"
-layout: single
+layout: categories
 tags: ['Git', 'GitHub','tutorial']
 comments: true
 ---
