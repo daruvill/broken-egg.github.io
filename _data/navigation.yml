@@ -2,25 +2,25 @@
 main:
   - title: "Git study"
     url: /categories/git/
-  - title: "Deep Learning"
-    url: /categories/dl/
-  - title: "Programming Language"
+  - title: "AI"
+    url: /categories/ai/
+  - title: "Languages"
     url: /categories/pl/
   - title: "Math"
     url: /categories/math/
-  - title: "DataBase"
-    url: /categories/sql/
-  - title: "Coding Test"
-    url: /categories/ct/
+  - title: "DB"
+    url: /categories/db/
   - title: "Web"
     url: /categories/web/
   - title: "Algorithms"
     url: /categories/ag/
-  - title: "Papers and Articles"
-    url: /categories/papers/
-  - title: "Personal Projects"
-    url: /categories/projects/
-  - title: "Server"
-    url: /categories/server/
   - title: "Data Structure"
     url: /categories/ds/
+  - title: "Server"
+    url: /categories/server/
+  - title: "Papers"
+    url: /categories/papers/
+  - title: "Projects"
+    url: /categories/projects/
+  - title: "Coding Test"
+    url: /categories/ct/
