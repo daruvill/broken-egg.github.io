@@ -1,7 +1,6 @@
 ---
 title: "Git Hub Tutorial"
-tags: ['Git', 'GitHub','tutorial']
-category: ['tutorial']
+category: []
 comments: true
 toc_sticky: true
 ---
