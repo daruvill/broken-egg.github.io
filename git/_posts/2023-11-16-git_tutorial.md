@@ -3,6 +3,9 @@ title: "Git Hub Tutorial"
 category: []
 comments: true
 toc_sticky: true
+sitemap:
+    changefreq: daily
+    priority: 1.0
 ---
 
 ## Git 초기 설정
