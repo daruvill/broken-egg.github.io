@@ -1,9 +1,9 @@
 ---
 title: "Git Hub Tutorial"
-layout: single
 category: ['git']
 tags: ['Git', 'GitHub','tutorial']
 comments: true
+toc_sticky: true
 ---
 
 ## Git 초기 설정
