@@ -1,4 +1,4 @@
 ---
-layout: home
+layout: categories
 permalink: /categories/git/
 ---
