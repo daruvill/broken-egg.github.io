@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Git Study"
-    url: /categories/git/
+    url: /git/
   - title: "AI"
     url: /categories/ai/
   - title: "Languages"
