@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Git Study"
-    url: /categories/git/
+    url: /categories/git.md
   - title: "AI"
     url: /categories/ai/
   - title: "Languages"
@@ -11,7 +11,7 @@ main:
   - title: "DB"
     url: /categories/db/
   - title: "Web"
-    url: /categories/web/
+    url: /categories/web.md
   - title: "Algorithms"
     url: /categories/ag/
   - title: "Data Structure"
