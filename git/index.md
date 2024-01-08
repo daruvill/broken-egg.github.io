@@ -1,4 +1,4 @@
 ---
 layout: posts
-permalink: /git/
+permalink: /git/_posts/
 ---
