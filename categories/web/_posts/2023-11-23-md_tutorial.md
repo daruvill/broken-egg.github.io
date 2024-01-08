@@ -1,6 +1,6 @@
 ---
 title: "markdown(.md) tutorial"
-category: []
+category: ['web']
 comments: true
 toc_sticky: true
 sitemap:

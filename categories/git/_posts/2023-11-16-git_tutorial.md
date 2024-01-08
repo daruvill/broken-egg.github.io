@@ -1,6 +1,6 @@
 ---
 title: "Git Hub Tutorial"
-category: []
+category: ['git']
 comments: true
 toc_sticky: true
 sitemap:
