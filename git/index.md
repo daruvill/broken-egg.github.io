@@ -1,4 +1,4 @@
 ---
-layout: tag
+layout: tags
 permalink: /git/
 ---
