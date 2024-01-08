@@ -1,4 +1,4 @@
 ---
-layout: category
+layout: posts
 permalink: /git/
 ---
