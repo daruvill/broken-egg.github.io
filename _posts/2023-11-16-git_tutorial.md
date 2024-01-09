@@ -22,7 +22,7 @@ $git init
 ### [2] 유저 설정
 
 ```bash
-$git config --global user.email 'dykim3277@gmail.com'
+$git config --global user.email 'helloworld@gmail.com'
 
 $git config --global user.name 'daruvill'
 
